@@ -94,6 +94,8 @@ if ( !function_exists( 'desmo2019_setup' ) ) {
 
     //https://developer.wordpress.org/reference/functions/add_image_size/
     add_image_size( 'desmo2019-featured-image', 1024, 500, true );
+    add_image_size( 'desmo2019-medium-square', 300, 300, true );
+    add_image_size( 'desmo2019-big-square', 500, 500, true );
 
     // https://codex.wordpress.org/Function_Reference/register_default_headers
     register_default_headers( array(

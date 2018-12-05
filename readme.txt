@@ -40,3 +40,11 @@ License: Ubuntu Font License
 
 1.0.0 - 2018.12.05
 - Initial release
+
+1.0.1 - 2018.12.05
+- Added "medium square" image size
+- Added "big square" image size
+- Fixed layout overflow
+- Improved header sub menu size handling
+- Added padding to all content and widget images
+- Change gallery styles

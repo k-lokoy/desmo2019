@@ -67,16 +67,16 @@ msgstr ""
 msgid "Scroll to the top"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:105
 msgctxt "Header_image"
 msgid "Header Image"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:111
 msgid "Header"
 msgstr ""
 
-#: functions.php:110, inc/customizer.php:53
+#: functions.php:112, inc/customizer.php:53
 msgid "Footer"
 msgstr ""
 
@@ -122,6 +122,14 @@ msgstr ""
 
 #: inc/filters.php:21
 msgid "Read more"
+msgstr ""
+
+#: inc/filters.php:51
+msgid "Medium square"
+msgstr ""
+
+#: inc/filters.php:52
+msgid "Big square"
 msgstr ""
 
 #: inc/widget-areas.php:13

@@ -5,10 +5,10 @@
   Author: Lokøy Design
   Author URI: http://lokoydesign.github.io/
   Description: Custom theme for brilliant-pearl.com
-  Version: 1.0.0
+  Version: 1.0.1
   License: GNU General Public License v3
   License URI: http://www.gnu.org/licenses/gpl-3.0.html  
-  Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, post-formats, theme-options, threaded-comments, translation-ready, blog
+  Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, post-formats, theme-options, threaded-comments, translation-ready, blog
   Text Domain: desmo2019
 
   desmo2019 WordPress Theme, Copyright (C) 2018, Lokøy Design
@@ -508,11 +508,11 @@ body::after {
   grid-template-areas: "site-header" "site-main" "site-footer";
   grid-gap: var(--spacing);
   padding: var(--spacing);
-  min-height: 100%;
 }
 
 body.home #site-wrapper {
   grid-template-rows: minmax(0, auto) 1fr minmax(0, auto);
+  height: 100%;
 }
 
 body:not(.home).has-right-sidebar #site-wrapper {
@@ -536,19 +536,10 @@ body:not(.home).has-right-sidebar #site-wrapper {
 }
 
 @media (min-width: 1024px) {
-  body {
-    max-height: 100%;
-    overflow: hidden;
-  }
   body.single::before,
   body.page::before,
   body.archive::before {
     opacity: .75;
-  }
-  #site-wrapper {
-    min-height: 0;
-    height: -webkit-calc(100% - var(--spacing) * 2);
-    height: calc(100% - var(--spacing) * 2);
   }
   body:not(.home).has-right-sidebar #site-wrapper {
     grid-template-columns: minmax(0, 100%) minmax(0, 300px);
@@ -625,15 +616,6 @@ body.home #site-main {
       -ms-flex-line-pack: start;
           align-content: start;
   grid-gap: var(--spacing);
-}
-
-@media (min-width: 1024px) {
-  #widget-area-right-sidebar {
-    -webkit-align-content: end;
-        -ms-flex-line-pack: end;
-            align-content: end;
-    overflow-y: auto;
-  }
 }
 
 /* 4.0 Site Header */
@@ -790,7 +772,8 @@ body.home #site-main {
     margin: 0 1em 1em 0;
   }
   #header-nav > li:hover > ul {
-    max-height: 50vh;
+    max-height: 100vh;
+    overflow-y: auto;
     padding: 1em;
   }
   #header-nav > li:hover > ul::before {
@@ -1338,6 +1321,26 @@ img {
   height: auto;
 }
 
+.entry-content img,
+.entry-content .wp-caption,
+.widget img,
+.widget .wp-caption,
+.gallery-item {
+  background-color: var(--color-text);
+  max-width: -webkit-calc(100% - 1em);
+  max-width: calc(100% - 1em);
+  -webkit-border-radius: 0.25em;
+          border-radius: 0.25em;
+  padding: .5em;
+}
+
+.entry-content .wp-caption img,
+.widget .wp-caption img,
+.gallery-item img {
+  padding: 0;
+  max-width: 100%;
+}
+
 .wp-caption,
 .gallery-item {
   color: var(--color-bg);
@@ -1347,26 +1350,12 @@ img {
   color: var(--color-text);
 }
 
-.wp-caption {
-  background-color: var(--color-text);
-  padding: .5em;
-  max-width: -webkit-calc(100% - 1em);
-  max-width: calc(100% - 1em);
-  -webkit-border-radius: 0.25em;
-          border-radius: 0.25em;
-}
-
 .wp-caption a {
   text-decoration: underline;
 }
 
 .wp-caption a::after {
   display: none;
-}
-
-.gallery-item img {
-  -webkit-border-radius: 0.25em;
-          border-radius: 0.25em;
 }
 
 .wp-caption-text {
@@ -1394,28 +1383,18 @@ object {
 }
 
 .gallery {
-  background-color: var(--color-text);
-  padding: 1em;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, auto));
-  grid-gap: var(--spacing);
-  -webkit-border-radius: 0.25em;
-          border-radius: 0.25em;
-  text-align: center;
+  grid-gap: 1em;
+  max-width: 1024px;
 }
 
 .gallery-columns-1 {
   grid-template-columns: minmax(0, 1fr);
 }
 
-.gallery-item img {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.gallery-caption {
-  font-style: italic;
+.gallery-item {
+  margin: 0;
 }
 
 iframe,

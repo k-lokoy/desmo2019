@@ -57,11 +57,11 @@ body::after {
   ;
   grid-gap: var(--spacing);
   padding: var(--spacing);
-  min-height: 100%;
 }
 
 body.home #site-wrapper {
   grid-template-rows: minmax(0, auto) 1fr minmax(0, auto);
+  height: 100%;
 }
 
 body:not(.home).has-right-sidebar #site-wrapper {
@@ -90,20 +90,10 @@ body:not(.home).has-right-sidebar #site-wrapper {
 }
 
 @media (min-width: 1024px) {  
-  body {
-    max-height: 100%;
-    overflow: hidden;
-  }
-
   body.single::before,
   body.page::before,
   body.archive::before {
     opacity: .75;
-  }
-
-  #site-wrapper {
-    min-height: 0;
-    height: calc(100% - var(--spacing) * 2);
   }
 
   body:not(.home).has-right-sidebar #site-wrapper {

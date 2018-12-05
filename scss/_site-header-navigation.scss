@@ -134,7 +134,8 @@
       margin: 0 1em 1em 0;
     
       &:hover > ul { 
-        max-height: 50vh;
+        max-height: 100vh;
+        overflow-y: auto;
         padding: 1em;
         &::before {
           width: 100%;
