@@ -1,0 +1,21 @@
+#site-header {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, auto));
+  grid-gap: var(--spacing);
+}
+
+#site-identity {
+  display: grid;
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  #site-header {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
+  }
+
+  #site-identity {
+    justify-content: center;
+    text-align: center;
+  }
+}

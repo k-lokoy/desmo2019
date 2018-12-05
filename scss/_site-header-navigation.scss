@@ -1,0 +1,176 @@
+.home #header-nav-container {
+  opacity: 0;
+  animation: fadein 1s ease-in-out 2s forwards; 
+}
+
+#header-nav-toggle {
+  display: none;
+}
+
+#header-nav-toggle-label {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 20;
+
+  span,
+  span::before,
+  span::after {
+    background-color: var(--color-text);
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+  }
+
+  span {
+    top: -1px;
+    bottom: 0px;
+    margin: auto;
+
+    &::before,
+    &::after {
+      content: '';
+    }
+
+    &:before {
+      top: -9px;
+    }
+
+    &::after {
+      bottom: -9px;
+    }
+  }
+}
+
+#header-nav-toggle:checked ~ #header-nav-toggle-label span {
+  left: 30px;
+ 
+  &::before,
+  &::after {
+    left: -30px;
+    top: 0px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+#header-nav {
+  background-color: var(--color-bg);
+  position: absolute;
+  display: none;
+  grid-gap: .5em;
+  margin: auto;
+  padding: calc(24px + 3em) 1em 1em;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: calc(100% - 2em);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+
+    &::after {
+      bottom: -.5em;
+      height: 0.125rem;
+      z-index: 100;
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-gap: .5em;
+    margin-top: .5em;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+#header-nav-toggle:checked ~ #header-nav {
+  display: grid;
+}
+
+@media (min-width: 1024px) {
+  #header-nav-toggle-label {
+    display: none;
+  }
+
+  #header-nav {
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    top: auto;
+    left: auto;
+    right: auto;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    a::after {
+      bottom: auto;
+    }
+
+    > li {
+      position: relative;
+      margin: 0 1em 1em 0;
+    
+      &:hover > ul { 
+        max-height: 50vh;
+        padding: 1em;
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+
+    > li > ul {
+      background-color: var(--color-bg);
+      grid-template-columns: minmax(100px, auto);
+      position: absolute;
+      max-height: 0px;
+      left: -2em;
+      font-size: 1.1rem;
+      text-transform: capitalize;
+      font-weight: 500;
+      padding: 0;
+      margin-top: 0px;
+      overflow: hidden;
+      z-index: 10;
+      transition: all .3s ease-in-out;
+
+      &::before {
+        background-color: var(--color-text);
+        position: absolute;
+        content: '';
+        display: block;
+        width: 0px;
+        height: 0.125em;
+        top: 0;
+        transition: all .3s ease-in-out;
+      }
+
+      a::after {
+        bottom: auto;
+      }
+    }
+  }
+}

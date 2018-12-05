@@ -1,0 +1,13 @@
+#widget-area-right-sidebar {
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  align-content: start;
+  grid-gap: var(--spacing);
+}
+
+@media (min-width: 1024px) {
+  #widget-area-right-sidebar {
+    align-content: end;
+    overflow-y: auto;
+  }
+}

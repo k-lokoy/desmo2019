@@ -1,0 +1,47 @@
+#site-footer {
+  font-size: .8rem;
+}
+
+#scroll-to-top {
+  background-color: var(--color-bg);
+  position: fixed;
+  bottom : -2000px;
+  right: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: bottom 1s ease-in-out, background-color .3s ease-in-out;
+
+  &::before,
+  &::after {
+    background-color: var(--color-text);
+    position: absolute;
+    content: "";
+    width: 43%;
+    height: 2px;
+    transition: background-color .3s ease-in-out;
+  }
+
+  &::before {
+    top: 50%;
+    right: 15%;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 50%;
+    left: 15%;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    background-color: var(--color-text);
+
+    &::before,
+    &::after {
+      background-color: var(--color-bg);
+    }
+  }
+}

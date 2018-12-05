@@ -1,0 +1,29 @@
+:root {
+  --font-family: 'Ubuntu', sans-serif;
+  --font-size: 14px;
+
+  --color-bg: #222222;
+  --color-text: #F4EDE7;
+  --color-anchor: #9ACEC3;
+  --color-border: #F4EDE7;
+
+  --shadow: 1px 1px 5px #222;
+
+  --spacing: 20px;
+}
+
+@keyframes glide {
+  0%   { width: 0; }
+  50%  { width: 80%; }
+  100% { width: 80%; }
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slidein {
+  0% { left: -9000px; }
+  100% { left: 0; }
+}

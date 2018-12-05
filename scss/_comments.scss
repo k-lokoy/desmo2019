@@ -1,0 +1,85 @@
+.comments-area {
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  grid-gap: 1em;
+}
+
+.comments-title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.comment-navigation {
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div  {
+      margin: 0 1em 0 0;
+    }
+  }
+}
+
+.comment-list {
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  margin: 0;
+}
+
+.comment-meta {
+  .comment-author {
+    img {}
+    .fn {}
+    .says {}
+  }
+  .comment-metadata {}
+}
+
+.comment,
+.pingback {
+  list-style: none;
+
+  &.bypostauthor {
+    background-color: rgba(0,0,0,.1);
+  }
+}
+
+.comment-author {
+  .avatar {
+    border-radius: 0.25em;
+  }
+}
+
+.comment-body {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, auto);
+  grid-gap: .5em;
+}
+
+.reply {
+  position: absolute;
+  left: calc(60px + .5em);
+}
+
+.comment-edit-link,
+.comment-reply-link {
+  font-size: .8rem;
+}
+
+.comment-form {
+  label {
+    display: block;
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
+}
+
+.comment-reply-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}

@@ -1,0 +1,26 @@
+#site-main,
+#site-main > section {
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  align-content: start;
+  grid-gap: calc( var(--spacing) * 2 );
+}
+
+#site-main > section {
+  grid-gap: var(--spacing);
+}
+
+body.home #site-main {
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 1024px) {
+  #site-main {
+    overflow-y: auto;
+  }
+
+  body.single .entry-content {
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body::before {
+  background-image: url('assets/images/web01.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: -20;
+}
+
+body.single::before,
+body.page::before,
+body.archive::before {
+  opacity: .5;
+}
+
+body.single::before {
+  background-image: url('assets/images/web02.jpg');
+}
+
+body.page::before {
+  background-image: url('assets/images/web03.jpg');
+}
+
+body.archive::before {
+  background-image: url('assets/images/web04.jpg');
+}
+
+body::after {
+  background-image: linear-gradient(to bottom right, #666, #704214);
+  opacity: .3; 
+  z-index: -10;
+}
+
+#site-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  grid-template-areas:
+    "site-header"
+    "site-main"
+    "site-footer"
+  ;
+  grid-gap: var(--spacing);
+  padding: var(--spacing);
+  min-height: 100%;
+}
+
+body.home #site-wrapper {
+  grid-template-rows: minmax(0, auto) 1fr minmax(0, auto);
+}
+
+body:not(.home).has-right-sidebar #site-wrapper {
+  grid-template-areas:
+    "site-header"
+    "site-main"
+    "sidebar"
+    "site-footer"
+  ;
+}
+
+#site-header {
+  grid-area: site-header;
+}
+
+#site-main {
+  grid-area: site-main;
+}
+
+#widget-area-right-sidebar {
+  grid-area: sidebar;
+}
+
+#site-footer {
+  grid-area: site-footer;
+}
+
+@media (min-width: 1024px) {  
+  body {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  body.single::before,
+  body.page::before,
+  body.archive::before {
+    opacity: .75;
+  }
+
+  #site-wrapper {
+    min-height: 0;
+    height: calc(100% - var(--spacing) * 2);
+  }
+
+  body:not(.home).has-right-sidebar #site-wrapper {
+    grid-template-columns: minmax(0, 100%) minmax(0, 300px);
+    grid-template-rows: minmax(0, 60px) minmax(0, 1fr) minmax(0, auto);
+    grid-template-areas:
+      "site-header site-header"
+      "site-main sidebar"
+      "site-footer site-footer"
+    ;
+  }
+}

@@ -1,0 +1,180 @@
+# Copyright (C) 2018 desmo2019
+# This file is distributed under the same license as the desmo2019 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: desmo2019\n"
+"Report-Msgid-Bugs-To: https://github.com/lokoydesign/desmo2019/issues\n"
+"POT-Creation-Date: 2018-12-05 16:35+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Lokøy Design <kennethlokoy@gmail.com>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:16
+msgid "404 Not Found"
+msgstr "404 Ikke Funnet"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Siden finnes ikke."
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Ingenting ble funnet. Bruk søkefeltet eller menyen for å finne innholdet. "
+
+#: archive.php:31 search.php:38
+msgid "Prev"
+msgstr "Forrige"
+
+#: archive.php:31 search.php:38
+msgid "Previous page"
+msgstr "Forrige side"
+
+#: archive.php:32 search.php:39 template-parts/entry-footer.php:26
+msgid "Next"
+msgstr "Neste"
+
+#: archive.php:32 search.php:39
+msgid "Next page"
+msgstr "Neste side"
+
+#: archive.php:33 search.php:40
+msgid "Page"
+msgstr "Side"
+
+#: comments.php:22
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s kommentarer om &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommentarer om &ldquo;%2$s&rdquo;"
+
+#: comments.php:37
+msgid "Older comments"
+msgstr "Eldre kommentarer"
+
+#: comments.php:38
+msgid "Newer comments"
+msgstr "Nyere kommentarer"
+
+#: footer.php:24
+msgid "Scroll to the top"
+msgstr "Gå til toppen"
+
+#: functions.php:103
+msgctxt "Header_image"
+msgid "Header Image"
+msgstr "Toppfelt bilde"
+
+#: functions.php:109
+msgid "Header"
+msgstr "Toppfelt"
+
+#: functions.php:110 inc/customizer.php:53
+msgid "Footer"
+msgstr "Bunnfelt"
+
+#: header.php:38
+msgid "Toggle menu"
+msgstr "Skjul/vis meny"
+
+#: inc/customizer.php:19
+msgid "Text Color"
+msgstr "Tekstfarge"
+
+#: inc/customizer.php:30
+msgid "Links"
+msgstr "Lenker"
+
+#: inc/customizer.php:41
+msgid "Borders"
+msgstr "Kantlinjer"
+
+#: inc/customizer.php:47
+msgid "Theme Options"
+msgstr "Temainnstillinger"
+
+#: inc/customizer.php:64
+msgid "Footer text"
+msgstr "Bunnfeltstekst"
+
+#: inc/customizer.php:76
+msgid "Display Copyright icon"
+msgstr "Vis kopirett symbol"
+
+#: inc/customizer.php:88
+msgid "Display current year"
+msgstr "Vis nåværende år"
+
+#: inc/filters.php:21
+msgid "Read more"
+msgstr "Les mer"
+
+#: inc/widget-areas.php:13
+msgid "Right sidebar"
+msgstr "Høyre sidefelt"
+
+#: inc/widget-areas.php:15
+msgid "Widget area on the right side of the content"
+msgstr "Widget område for høyre side av innhold"
+
+#: search.php:19
+#, php-format
+msgid "Search results for: %s"
+msgstr "Søksresultat for: %s"
+
+#: search.php:24
+msgid "Nothing found"
+msgstr "Ingenting funnet"
+
+#: template-parts/content-aside.php:32 template-parts/content-link.php:32
+#: template-parts/content-page.php:17 template-parts/content-quote.php:32
+#: template-parts/content-status.php:32 template-parts/entry-header.php:32
+msgid "Edit"
+msgstr "Rediger"
+
+#: template-parts/content-aside.php:47 template-parts/content-audio.php:41
+#: template-parts/content-chat.php:25 template-parts/content-gallery.php:27
+#: template-parts/content-image.php:25 template-parts/content-link.php:66
+#: template-parts/content-page.php:32 template-parts/content-quote.php:52
+#: template-parts/content-status.php:54 template-parts/content-video.php:41
+#: template-parts/content.php:25
+msgid "Pages:"
+msgstr "Sider:"
+
+#: template-parts/content-none.php:12
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Ingenting ble funnet. Bruk søkefeltet eller menyen for å finne innholdet. "
+
+#: template-parts/entry-footer.php:21
+msgid "Previous post"
+msgstr "Forige post"
+
+#: template-parts/entry-footer.php:22
+msgid "Previous"
+msgstr "Forige"
+
+#: template-parts/entry-footer.php:25
+msgid "Next post"
+msgstr "Neste"
+
+#: template-parts/entry-header.php:43 template-parts/entry-header.php:48
+msgid "Untitled post"
+msgstr "Uten tittel"

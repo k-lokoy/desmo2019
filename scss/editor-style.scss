@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*
+  Theme Name: WP-Theme-Boilerplate
+  Description: Used to style the TinyMCE editor.
+*/
+
+/* Table of Contents
+  -------------------------------
+  1.0 Normalize
+  2.0 Variables
+  3.0 Layout
+  4.0 Tags and Elements
+  5.0 Form elements
+  6.0 Media
+*/
+
+/* 1.0 Normalize */
+@import "normalize";
+
+/* 2.0 Variables */
+@import "variables";
+
+:root {
+  --color-border: #000000;
+  --color-text: #000000;
+  --color-anchor: #000000;
+}
+
+/* 3.0 Layout */
+body {
+  font-family: var(--font-family);
+  margin: var(--spacing);
+}
+
+/* 4.0 Content: Tags and Elements */
+@import "content-tags-and-elements";
+
+a {
+  text-decoration: underline;
+}
+
+table {
+  background-color: transparent;
+}
+
+ins {
+  color: #FFFFFF;
+}
+
+/* 5.0 Content: Form elements */
+@import "content-form-elements";
+
+input,
+textarea,
+select,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  color: #FFFFFF;
+}
+
+/* 6.0 Content: media */
+.wp-caption {
+  padding: .5em;
+  border-radius: 0.25em;
+  border: 0.0625em solid #000000;
+  max-width: calc(100% - 1em);
+}

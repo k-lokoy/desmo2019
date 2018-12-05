@@ -1,0 +1,63 @@
+.page-header,
+.entry-header {
+  position: relative;
+
+  > * {
+    margin: 0;
+  }
+
+  h1,
+  h3 {
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.entry-meta {
+  display: grid;
+
+  a {
+    text-transform: uppercase;
+  }
+}
+
+.post-edit-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: .8rem;
+}
+
+@media (min-width: 1024px) {
+  .entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    > *:not(:last-child) {
+      margin-right: calc( var(--spacing) / 2 );
+
+      &::after {
+        content: '•';
+        color: var(--color-text);
+        padding-left: calc( var(--spacing) / 2 );
+      }
+    }
+  }
+
+  .post-edit-link {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+}

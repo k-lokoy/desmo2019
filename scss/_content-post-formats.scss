@@ -1,0 +1,99 @@
+/* Post format: Gallery */
+.format-gallery {
+}
+
+/* Post format: Image */
+.format-image {
+
+}
+
+/* Post format: Audio */
+.format-audio {
+
+}
+
+/* Post format: Video */
+.js {
+  .format-video {
+    iframe,
+    embed,
+    object {
+      width: 100%;
+    }
+  }
+}
+
+/* Post format: Aside */
+body.archive #site-main .format-aside {
+  background-color: rgba(0,0,0,0.7);
+  grid-gap: 0;
+  padding: 1em;
+  border-radius: 0.25em;
+
+  .entry-meta {
+    font-size: .8rem;
+  }
+}
+
+/* Post format: Status */
+body.archive #site-main .format-status {
+  grid-gap: 0;
+
+  .entry-meta {
+    font-size: .8rem;
+  }
+
+  .entry-content {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+/* Post format: Link */
+body.archive .format-link {
+  .entry-content {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+
+/* Post format: Quote */
+.format-quote {
+  .entry-content {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  blockquote {
+    border: none;
+    padding: 0 2em;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      font-size: 3rem;
+    }
+
+    &::before {
+      content: '“';
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: '”';
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+/* Post format: Chat */
+.format-chat {
+  .entry-content {
+    border: 0.0625em solid var(--color-border);
+    padding: 1em;
+    font-style: italic;
+  }
+}

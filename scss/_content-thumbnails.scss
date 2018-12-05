@@ -1,0 +1,9 @@
+.post-thumbnail {
+  img {
+    border-radius: 0.25em;
+  }
+
+  &::after {
+    display: none;
+  }
+}

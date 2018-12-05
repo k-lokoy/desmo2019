@@ -1,0 +1,188 @@
+/* Header text */
+:root {
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: .5em 0 1.5em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Paragraph tag */
+p {
+  line-height: 1.5em;
+  margin: 0 0 1.5em;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 0.125em solid var(--color-border);
+  padding-left: 1em;
+  margin: 0 0 1.5em 1em;
+}
+
+/* Tables */
+table,
+td,
+th {
+  border: 0.0625em solid var(--color-border);
+  border-radius: 0.25em;
+}
+
+table {
+  background-color: rgba(0,0,0,.3);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 0.0625em 0 0 0.0625em;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+td,
+th {
+  border-width: 0 0.0625em 0.0625em 0;
+  text-align: left;
+  padding: .5em;
+}
+
+/* Defintion lists */
+dt{ font-weight: bold; }
+dd { margin: 0 0 1em 1em; }
+
+/* Lists */
+ul {
+  list-style: disc;
+}
+
+ul,
+ol {
+  margin-left: 2em;
+  padding: 0;
+}
+
+/* Address tag*/
+address {
+  font-style: italic;
+}
+
+/* Anchor tag*/
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.entry-content a {
+  color: var(--color-anchor);
+}
+
+/* Abbreviation tag*/
+abbr {
+  cursor: help;
+}
+
+/* Acronym tag */
+acronym {
+  cursor: help;
+}
+
+/* Cite tag */
+cite {
+  font-style: italic;
+}
+
+/* Code tag */
+code {
+  background-color: rgba(255,255,255,.2);
+}
+
+/* Horisontal rule tag */
+hr {
+  width: 100%;
+  border: none;
+  height: 0.0625em;
+  background-color: var(--color-border);
+}
+
+/* Insert tag */
+ins {
+  text-decoration: none;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Preformated text */
+pre {
+  background-color: rgba(0,0,0,.3);
+  border: 0.0625em dotted var(--color-border);
+  border-radius: 0.1875em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em;
+}
+
+@media (min-width: 1024px) {
+  a {
+    position: relative;
+    
+    &:hover{
+      text-decoration: none;
+    }
+
+    &::after {
+      position: absolute;
+      background-color: var(--color-text);
+      content: '';
+      display: block;
+      width: 0px;
+      height: 0.0625em;
+      left: 0;
+      bottom: 0;
+      transition: width .5s ease-in-out;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+    }
+  }
+
+  .entry-content a::after {
+    background-color: var(--color-anchor);
+  }
+
+  a.ignore-animation::after {
+    display: none;
+  }
+}

@@ -1,0 +1,161 @@
+# Copyright (C) 2018 desmo2019
+# This file is distributed under the same license as the desmo2019 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: desmo2019\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Lokøy Design <kennethlokoy@gmail.com>\n"
+"Last-Translator: Lokøy Design <kennethlokoy@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://github.com/lokoydesign/desmo2019/issues\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:16
+msgid "404 Not Found"
+msgstr ""
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:31, search.php:38
+msgid "Prev"
+msgstr ""
+
+#: archive.php:31, search.php:38
+msgid "Previous page"
+msgstr ""
+
+#: archive.php:32, search.php:39, template-parts/entry-footer.php:26
+msgid "Next"
+msgstr ""
+
+#: archive.php:32, search.php:39
+msgid "Next page"
+msgstr ""
+
+#: archive.php:33, search.php:40
+msgid "Page"
+msgstr ""
+
+#: comments.php:21
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:37, comments.php:37
+msgid "Older comments"
+msgstr ""
+
+#: comments.php:38, comments.php:38
+msgid "Newer comments"
+msgstr ""
+
+#: footer.php:24
+msgid "Scroll to the top"
+msgstr ""
+
+#: functions.php:103
+msgctxt "Header_image"
+msgid "Header Image"
+msgstr ""
+
+#: functions.php:109
+msgid "Header"
+msgstr ""
+
+#: functions.php:110, inc/customizer.php:53
+msgid "Footer"
+msgstr ""
+
+#: header.php:38
+msgid "Toggle menu"
+msgstr ""
+
+#: search.php:19
+msgid "Search results for: %s"
+msgstr ""
+
+#: search.php:24
+msgid "Nothing found"
+msgstr ""
+
+#: inc/customizer.php:19
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Links"
+msgstr ""
+
+#: inc/customizer.php:41
+msgid "Borders"
+msgstr ""
+
+#: inc/customizer.php:47
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "Footer text"
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "Display Copyright icon"
+msgstr ""
+
+#: inc/customizer.php:88
+msgid "Display current year"
+msgstr ""
+
+#: inc/filters.php:21
+msgid "Read more"
+msgstr ""
+
+#: inc/widget-areas.php:13
+msgid "Right sidebar"
+msgstr ""
+
+#: inc/widget-areas.php:15
+msgid "Widget area on the right side of the content"
+msgstr ""
+
+#: template-parts/content-aside.php:32, template-parts/content-link.php:32, template-parts/content-page.php:17, template-parts/content-quote.php:32, template-parts/content-status.php:32, template-parts/entry-header.php:32
+msgid "Edit"
+msgstr ""
+
+#: template-parts/content-aside.php:47, template-parts/content-audio.php:41, template-parts/content-chat.php:25, template-parts/content-gallery.php:27, template-parts/content-image.php:25, template-parts/content-link.php:66, template-parts/content-page.php:32, template-parts/content-quote.php:52, template-parts/content-status.php:54, template-parts/content-video.php:41, template-parts/content.php:25
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/entry-footer.php:21
+msgid "Previous post"
+msgstr ""
+
+#: template-parts/entry-footer.php:22
+msgid "Previous"
+msgstr ""
+
+#: template-parts/entry-footer.php:25
+msgid "Next post"
+msgstr ""
+
+#: template-parts/entry-header.php:43, template-parts/entry-header.php:48
+msgid "Untitled post"
+msgstr ""

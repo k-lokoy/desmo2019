@@ -1,0 +1,94 @@
+input,
+textarea,
+select {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  padding: .3em .5em;
+  max-width: calc(100% - 1em);
+}
+
+input,
+textarea,
+select,
+button {
+  border: 0.0625em solid var(--color-border);
+  border-radius: 0.25em;
+}
+
+/* iOS not respecting border-radius */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="color"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button,
+.comment-edit-link,
+.comment-reply-link,
+.post-edit-link,
+.page-links > a,
+.post-tags > a {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: 0;
+  border: 0.0625em solid var(--color-border);
+  border-radius: 0.25em;
+  padding: .3em .5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: none;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    text-decoration: none;
+  }
+}
+
+label {
+
+}
+
+fieldset {
+  min-width: 0px;
+}
+
+.search-form,
+.post-password-form p:nth-child(2) {
+  display: flex;
+}
+
+.post-password-form input[type="password"] {
+  display: block;
+}
+
+.post-password-form input[type="submit"] {
+  position: relative;
+  height: 50%;
+  bottom: 0;
+  margin-top: auto;
+}
+
+.search-form .search-field,
+.post-password-form input[type="password"] {
+  max-width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-form .search-submit,
+.post-password-form input[type="submit"] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0
+}

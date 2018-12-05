@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*
+  Theme Name: desmo2019
+  Theme URI: https://github.com/lokoydesign/desmo2019
+  Author: Lokøy Design
+  Author URI: http://lokoydesign.github.io/
+  Description: Custom theme for brilliant-pearl.com
+  Version: 1.0.0
+  License: GNU General Public License v3
+  License URI: http://www.gnu.org/licenses/gpl-3.0.html  
+  Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, post-formats, theme-options, threaded-comments, translation-ready, blog
+  Text Domain: desmo2019
+
+  desmo2019 WordPress Theme, Copyright (C) 2018, Lokøy Design
+  desmo2019 is distributed under the terms of the GNU GPL v3
+*/
+
+/* Table of Contents
+  -------------------------------
+  1.0 Normalize
+  2.0 Variables
+  3.0 Layout
+    3.1 Site Header
+    3.2 Main
+    3.3 Widget areas
+  4.0 Site Header
+    4.1 Navigation
+  5.0 Content
+    5.1 Headers
+    5.2 Thumbnails
+    5.3 Tags and Elements
+    5.4 Form elements
+    5.5 Media
+    5.6 Post formats
+    5.7 Footers
+    5.8 Alignment
+  6.0 Comments
+  7.0 Widgets
+  8.0 Site footer
+  9.0 Accesibility
+*/
+
+/* 1.0 Normalize */
+@import "normalize";
+
+/* 2.0 Variables */
+@import "variables";
+
+/* 3.0 Layout */
+@import "layout";
+
+/* 3.1 Layout: Site Header */
+@import "layout-site-header";
+
+/* 3.2 Layout: Main */
+@import "layout-main";
+
+/* 3.3 Layout: Widget Areas */
+@import "layout-widget-areas";
+
+/* 4.0 Site Header */
+@import "site-header";
+
+/* 4.1 Site Header: Navigation */
+@import "site-header-navigation";
+
+/* 5.0 Content */
+@import "content";
+
+/* 5.1 Content: Headers */
+@import "content-headers";
+
+/* 5.2 Content: Thumbnails */
+@import "content-thumbnails";
+
+/* 5.3 Content: Tags and Elements */
+@import "content-tags-and-elements";
+
+/* 5.4 Content: Form elements */
+@import "content-form-elements";
+
+/* 5.5 Content: Media */
+@import "content-media";
+
+/* 5.6 Content: Post formats */
+@import "content-post-formats";
+
+/* 5.7 Content: Footers */
+@import "content-footers";
+
+/* 5.8 Content: Alignment */
+@import "content-alignment";
+
+/* 6.0 Comments */
+@import "comments";
+
+/* 7.0 Widgets */
+@import "widgets";
+
+/* 8.0 Site footer */
+@import "site-footer";
+
+/* 9.0 Accesibility */
+@import "accessibility";
