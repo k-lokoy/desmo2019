@@ -9,7 +9,7 @@ const zip     = require( 'gulp-zip' )
 const info = {
   name:      'desmo2019',
   slug:      'desmo2019',
-  version:   '1.0.1',
+  version:   '1.0.2',
   author:    'Lokøy Design',
   email:     'kennethlokoy@gmail.com',
   bugReport: 'https://github.com/lokoydesign/desmo2019/issues'

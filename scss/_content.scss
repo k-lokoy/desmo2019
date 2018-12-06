@@ -57,8 +57,14 @@ body {
 }
 
 .page-links {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 1.2rem;
   text-shadow: none;
+
+  > * {
+    margin: 0 .25em .5em;    
+  }
   
   > span {
     background-color: var(--color-text);

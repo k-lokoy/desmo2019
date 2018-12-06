@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desmo2019\n"
 "Report-Msgid-Bugs-To: https://github.com/lokoydesign/desmo2019/issues\n"
-"POT-Creation-Date: 2018-12-05 16:35+0100\n"
+"POT-Creation-Date: 2018-12-07 00:21+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Lokøy Design <kennethlokoy@gmail.com>\n"
@@ -75,16 +75,16 @@ msgstr "Nyere kommentarer"
 msgid "Scroll to the top"
 msgstr "Gå til toppen"
 
-#: functions.php:103
+#: functions.php:89
 msgctxt "Header_image"
 msgid "Header Image"
 msgstr "Toppfelt bilde"
 
-#: functions.php:109
+#: functions.php:95
 msgid "Header"
 msgstr "Toppfelt"
 
-#: functions.php:110 inc/customizer.php:53
+#: functions.php:96 inc/customizer.php:53
 msgid "Footer"
 msgstr "Bunnfelt"
 
@@ -123,6 +123,26 @@ msgstr "Vis nåværende år"
 #: inc/filters.php:21
 msgid "Read more"
 msgstr "Les mer"
+
+#: inc/filters.php:51
+msgid "Medium square"
+msgstr "Mellomstor firkant"
+
+#: inc/filters.php:52
+msgid "Normal"
+msgstr "Normal"
+
+#: inc/filters.php:53
+msgid "Normal square"
+msgstr "Normal firkant"
+
+#: inc/filters.php:54
+msgid "Big"
+msgstr "Stor"
+
+#: inc/filters.php:55
+msgid "Big square"
+msgstr "Stor firkant"
 
 #: inc/widget-areas.php:13
 msgid "Right sidebar"

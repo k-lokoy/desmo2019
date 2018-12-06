@@ -44,12 +44,15 @@ add_filter( 'body_class', 'desmo2019_body_class' );
  * Add custom image sizes
  *
  * @since 1.0.1
- * @version 1.0.1
+ * @version 1.0.2
  */
 function desmo2019_image_custom_sizes( $sizes ) {
   return array_merge( $sizes, array(
     'desmo2019-medium-square' => __( 'Medium square', 'desmo2019' ),
-    'desmo2019-big-square'    => __( 'Big square', 'desmo2019' ),
+    'desmo2019-normal'        => __( 'Normal', 'desmo2019' ),
+    'desmo2019-normal-square' => __( 'Normal square', 'desmo2019' ),
+    'desmo2019-big'           => __( 'Big',    'desmo2019' ),
+    'desmo2019-big-square'    => __( 'Big square',    'desmo2019' ),
   ) );
 }
 add_filter( 'image_size_names_choose', 'desmo2019_image_custom_sizes' );

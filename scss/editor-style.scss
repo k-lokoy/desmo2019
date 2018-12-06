@@ -22,7 +22,7 @@
 
 :root {
   --color-border: #000000;
-  --color-text: #000000;
+  --color-text:   #000000;
   --color-anchor: #000000;
 }
 
@@ -39,12 +39,22 @@ a {
   text-decoration: underline;
 }
 
+table,
+td,
+th {
+  border: 0.0625em solid black;
+}
+
 table {
   background-color: transparent;
 }
 
 ins {
   color: #FFFFFF;
+}
+
+hr {
+  background-color: black;
 }
 
 /* 5.0 Content: Form elements */

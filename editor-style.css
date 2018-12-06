@@ -423,7 +423,7 @@ template {
 
 :root {
   --color-border: #000000;
-  --color-text: #000000;
+  --color-text:   #000000;
   --color-anchor: #000000;
 }
 
@@ -490,17 +490,15 @@ blockquote {
 table,
 td,
 th {
-  border: 0.0625em solid var(--color-border);
-  -webkit-border-radius: 0.25em;
-          border-radius: 0.25em;
+  border: 0.0625em solid rgba(255, 255, 255, 0.5);
 }
 
 table {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-bg);
   border-collapse: separate;
   border-spacing: 0;
   border-width: 0.0625em 0 0 0.0625em;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 1.5em;
 }
 
@@ -594,6 +592,15 @@ pre {
   max-width: 100%;
   overflow: auto;
   padding: 1em;
+  word-wrap: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -631,12 +638,22 @@ a {
   text-decoration: underline;
 }
 
+table,
+td,
+th {
+  border: 0.0625em solid black;
+}
+
 table {
   background-color: transparent;
 }
 
 ins {
   color: #FFFFFF;
+}
+
+hr {
+  background-color: black;
 }
 
 /* 5.0 Content: Form elements */

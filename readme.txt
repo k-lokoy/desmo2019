@@ -48,3 +48,16 @@ License: Ubuntu Font License
 - Improved header sub menu size handling
 - Added padding to all content and widget images
 - Change gallery styles
+
+1.0.2 - 2018.12.06
+- Fixed extra scrollbar on #site-main
+- Improved table styles
+- Fixed wp-caption-text margin
+- Fixed handling of many page links 
+- Fixed word wrapping in pre elements
+- Added normal, big and normal square image sizes
+- Added editor-styles to Gutenberg
+- cleaned up functions.php
+
++ Add social media icons
++ Style comments and pingbacks

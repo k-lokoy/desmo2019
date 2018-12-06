@@ -16,10 +16,6 @@ body.home #site-main {
 }
 
 @media (min-width: 1024px) {
-  #site-main {
-    overflow-y: auto;
-  }
-
   body.single .entry-content {
     min-height: 100vh;
   }

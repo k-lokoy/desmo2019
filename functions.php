@@ -46,15 +46,6 @@ if ( !function_exists( 'desmo2019_setup' ) ) {
     // https://codex.wordpress.org/Custom_Backgrounds
     add_theme_support( 'custom-background', array(
       'default-color'          => '222222',
-      'default-image'          => '',
-      'default-repeat'         => 'repeat',
-      'default-position-x'     => 'left',
-      'default-position-y'     => 'top',
-      'default-size'           => 'auto',
-      'default-attachment'     => 'scroll',
-      'wp-head-callback'       => '_custom_background_cb',
-      'admin-head-callback'    => '',
-      'admin-preview-callback' => ''
     ) );
 
     // https://codex.wordpress.org/Theme_Markup
@@ -78,24 +69,17 @@ if ( !function_exists( 'desmo2019_setup' ) ) {
       'chat',
     ) );
 
-    // https://codex.wordpress.org/Custom_Headers
-    add_theme_support( 'custom-header', array(
-      'default-image'      => '%s/assets/images/header.jpg',
-      'default-text-color' => '000000',
-      'random-default'     => false,
-      'width'              => 1500,
-      'height'             => 1000,
-      'flex-height'        => false,
-      'flex-width'         => false,
-      'header-text'        => false,
-      'uploads'            => true,
-    ) );
-
+    // Editor styles for TinyMCE and Gutenberg
+    add_theme_support( 'editor-styles' );
+    add_editor_style( 'editor-style.css' );
 
     //https://developer.wordpress.org/reference/functions/add_image_size/
     add_image_size( 'desmo2019-featured-image', 1024, 500, true );
-    add_image_size( 'desmo2019-medium-square', 300, 300, true );
-    add_image_size( 'desmo2019-big-square', 500, 500, true );
+    add_image_size( 'desmo2019-medium-square',   300, 300, true );
+    add_image_size( 'desmo2019-normal',          400, 400 );
+    add_image_size( 'desmo2019-normal-square',   400, 400, true );
+    add_image_size( 'desmo2019-big',             500, 500 );
+    add_image_size( 'desmo2019-big-square',      500, 500, true );
 
     // https://codex.wordpress.org/Function_Reference/register_default_headers
     register_default_headers( array(
@@ -112,7 +96,6 @@ if ( !function_exists( 'desmo2019_setup' ) ) {
       'footer' => __( 'Footer', 'desmo2019' ),
     ) );
 
-    add_editor_style( array( 'editor-style.css' ) );
   }
   add_action( 'after_setup_theme', 'desmo2019_setup' );
 
