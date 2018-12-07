@@ -38,6 +38,9 @@ License: Ubuntu Font License
 
 # Changelog
 
++ = TODO
+- = Done
+
 1.0.0 - 2018.12.05
 - Initial release
 
@@ -58,6 +61,11 @@ License: Ubuntu Font License
 - Added normal, big and normal square image sizes
 - Added editor-styles to Gutenberg
 - cleaned up functions.php
+
+1.0.3 - 2018.12.07
+- Removed big , big-square, normal and normal-square image sizes
+- Removed padding on regular images
+- Removed grid gap from #site-branding
 
 + Add social media icons
 + Style comments and pingbacks
