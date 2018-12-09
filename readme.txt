@@ -67,5 +67,8 @@ License: Ubuntu Font License
 - Removed padding on regular images
 - Removed grid gap from #site-branding
 
+1.0.4 - 2018.12.
+- Readded big-square image size
+
 + Add social media icons
 + Style comments and pingbacks
